@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pokedex</title>
+</head>
+<body >
+    <div class="light-bulb">
+        <div class="white-color">
+            <div class="blue-color">
+                <div class="blue-light-color">
+                    <div class="white-dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pokedex">
+        
+            <div class="search">
+                <h1>Pokedex</h1>
+                <img src="images/pokeball.png" alt="Pokemon" id="pokeImg" width="150px"><br>
+                <input type="text" placeholder="Id/Pokemon" id="pokeName" name="pokeName"><br>
+                <button id="pokeButton" onclick="fetchPokemon()" >Buscar Pokemon</button>
+            </div>
+            <div class="break"></div>
+            <div class="information">
+                <div class="pokeName" id="name"></div>
+                <div class="pokeId" id="pokeId"></div>
+                <div class="pokeType" id="pokeType"></div>
+                <div class="pokeAbilities" id="abilities"></div>
+                <div class="pokeStats" id="pokeStats"></div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script src="./js/poke-api.js"></script>
+    <!--<p>Using <a href="https://pokeapi.co/">PokeAPi</a></p>-->
+</footer>
+</html>
